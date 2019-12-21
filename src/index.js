@@ -8,7 +8,7 @@ axios.get('/ISteamNews/GetNewsForApp/v0002/', {
     maxlength: 300
   }})
   .then(res => {
-    console.log('response', res)
+    console.log('response', res.data.appnews.newsitems)
   })
   .catch(err => {
     console.error('err', err.message)
